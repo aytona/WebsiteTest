@@ -6,6 +6,10 @@ h1, h2, h3{
   font-family: 'Lobster', cursive;
 }
 
-p, a {
+p, a{
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.progressText{
+  color: #fff;
 }
