@@ -1,6 +1,7 @@
 body{
   padding-top: 70px;
   margin-bottom: 30px;
+  background-color: rgb(237,237,237);
 }
 
 h1, h2, h3{
@@ -46,6 +47,10 @@ html{
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #000;
+}
+
+.thumbnail, .jumbotron{
+  background-color: whitesmoke;
 }
 
 .thumbnail h3{
