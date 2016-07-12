@@ -27,6 +27,40 @@ html{
   height: 30px;
 }
 
+.carousel{
+  background-color: transparent;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+.carousel img{
+  margin: auto;
+}
+
+.thumbnail{
+  width: 300px;
+  margin: auto;
+}
+
+.thumbnailIMG{
+  width: 242px;
+  height: 200px;
+  margin:auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #000;
+}
+
+.endlessrunnerIMG{
+  background-image: url("../imgs/professional/endlessrunner.PNG");
+}
+
+.synapseIMG{
+  background-image: url("../imgs/professional/synapse.png");
+}
+
 #copyright h3 p{
   display: inline-block;
 }
