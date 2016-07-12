@@ -13,3 +13,7 @@ p, a{
 .progressText{
   color: #fff;
 }
+
+#copyright h3 p{
+  display: inline-block;
+}
