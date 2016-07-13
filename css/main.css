@@ -29,13 +29,13 @@ html{
 }
 
 .carousel{
-  background-color: transparent;
   width: 50%;
   height: 50%;
-  margin: auto;
 }
 
-.carousel img{
+.carousel, .carousel-control, .carousel img{
+  background-color: transparent;
+  border-radius: 15px;
   margin: auto;
 }
 
@@ -47,6 +47,7 @@ html{
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #000;
+  border-radius: 10px;
 }
 
 .thumbnail, .jumbotron{
