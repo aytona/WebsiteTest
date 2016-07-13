@@ -90,27 +90,6 @@ html{
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
-.endlessrunnerIMG, .proSlide1{
-  background-image: url("../imgs/professional/endlessrunner.PNG");
-}
-
-.synapseIMG, .proSlide2{
-  background-image: url("../imgs/professional/synapse.png");
-  background-size: cover !important;
-}
-
-.perSlide1{
-  background-image: url("../imgs/personal/alieninvasion.PNG");
-}
-
-.perSlide2{
-  background-image: url("../imgs/personal/closeencounters.PNG");
-}
-
-.perSlide3{
-  background-image: url("../imgs/personal/recognizingblobs.PNG");
-}
-
 .showcaseContainer{
   width: 75%;
 }

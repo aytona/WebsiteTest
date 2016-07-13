@@ -1,0 +1,52 @@
+.proSlide1, .endlessrunnerIMG{
+  background-image: url("../imgs/professional/endlessrunner.PNG");
+}
+
+.proSlide2, .synapseIMG{
+  background-image: url("../imgs/professional/synapse.png");
+  background-size: cover !important;
+}
+
+.perSlide1, .alienIMG{
+  background-image: url("../imgs/personal/alieninvasion.PNG");
+}
+
+.perSlide2, .encountersIMG{
+  background-image: url("../imgs/personal/closeencounters.PNG");
+}
+
+.perSlide3, .blobsIMG{
+  background-image: url("../imgs/personal/recognizingblobs.PNG");
+}
+
+.platformerIMG{
+  background-image: url("../imgs/personal/2dplatformer.PNG");
+}
+
+.spiritsIMG{
+  background-image: url("../imgs/personal/darkspirits.png");
+}
+
+.donkeyIMG{
+  background-image: url("../imgs/personal/donkeykong.PNG");
+}
+
+.matchingIMG{
+  background-image: url("../imgs/personal/matching.PNG");
+}
+
+.mobiIMG{
+  background-image: url("../imgs/personal/mobiassign.PNG");
+}
+
+.monsterIMG{
+  background-image: url("../imgs/personal/MonsterThrower.PNG");
+}
+
+.oilIMG{
+  background-image: url("../imgs/personal/oilspills.PNG");
+}
+
+.openglIMG{
+  background-image: url("../imgs/personal/opengl.PNG");
+}
