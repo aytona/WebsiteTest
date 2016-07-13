@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Christopher Aytona: Resume</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Condensed" rel="stylesheet">
+    <link rel="icon" href="imgs/icon.png">
+    <script src="js/main.js"></script>
+    <style>
+      .pdfobject-container { height: 800px;}
+      .pdfobject { border: 1px solid #000 }
+      small { font-family: 'Roboto Condensed', sans-serif }
+    </style>
+  </head>
+  <body id="top">
+    <nav class="navbar navbar-inverse navbar-fixed-top"> <!-- Nav bar -->
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#top">Christopher Aytona</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="professional.html">Professional Projects</a></li>
+            <li><a href="personal.html">Personal Projects</a></li>
+            <li class="active"><a href="#top">Résumé</a></li>
+            <li><a href="mailto:christopher.aytona@gmail.com"><img src="imgs/btnicons/email.png"> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h1 class="panel-title">Résumé: <small>Last updated July 13, 2016</small></h1>
+        </div>
+        <div class="panel-body">
+          <div id="resumePDF"></div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <footer class="navbar-inverse footer">
+      <div class="container ">
+        <div id="copyright">
+          <script>showCopyright();</script>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="PDFObject/pdfobject.min.js"></script>
+    <script>PDFObject.embed("resume.pdf", "#resumePDF");</script>
+  </body>
+</html>

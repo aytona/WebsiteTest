@@ -1,15 +1,138 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <title>Christopher Aytona: Portfolio</title>
-    </head>
-    <body>
-        <div id="Underconstruction">
-            <h1>Website Under Construction</h1>
-            <p>Site will be open once I've completed all pages.
-                If you want to checkout the progress, go <a href="https://github.com/aytona/aytona.github.io/tree/Alpha">here</a>.<p>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Christopher Aytona: Portfolio</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Condensed" rel="stylesheet">
+    <link rel="icon" href="imgs/icon.png">
+    <script src="js/main.js"></script>
+  </head>
+  <body id="top">
+    <nav class="navbar navbar-inverse navbar-fixed-top"> <!-- Nav bar -->
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#top">Christopher Aytona</a>
         </div>
-        <a href="test.html"><button>Go to test.html</button></a>
-    </body>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#top">Home</a></li>
+            <li><a href="professional.html">Professional Projects</a></li>
+            <li><a href="personal.html">Personal Projects</a></li>
+            <li><a href="resume.html">Résumé</a></li>
+            <li><a href="mailto:christopher.aytona@gmail.com"><img src="imgs/btnicons/email.png"> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+      <div class="jumbotron"> <!-- Intro -->
+        <h1>Welcome!</h1>
+        <p>My name is Christopher Aytona, and I'm an aspiring game developer.</p>
+      </div>
+
+      <div class="panel panel-default"> <!-- Skills bar -->
+        <div class="panel-heading"> <!-- Header -->
+          <h3 class="panel-title">Stats</h3>
+        </div>
+        <div class="panel-body"> <!-- Content -->
+          <div class="row"> <!-- Content Container -->
+            <div class="col-sm-2"> <!-- Portrait -->
+              <a href="#" class="thumbnail">
+                <img src="imgs/placeholder.png" alt="Picture of me">
+              </a>
+            </div>
+            <div class="col-sm-10"> <!-- Bars -->
+              <div class="row"> <!-- C# Row -->
+                <div class="col-sm-1">
+                  <p>C#</p>
+                </div>
+                <div class="col-sm-11">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                      <span class="sr-only">C# Skill</span>
+                      <p class="progressText">Experienced</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row"> <!-- C++ Row -->
+                <div class="col-sm-1">
+                  <p>C++</p>
+                </div>
+                <div class="col-sm-11">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                      <span class="sr-only">C++ Skill</span>
+                      <p class="progressText">Experienced</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row"> <!-- HTML/CSS Row -->
+                <div class="col-sm-1">
+                  <p>HTML/CSS</p>
+                </div>
+                <div class="col-sm-11">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                      <span class="sr-only">HTML/CSS Skill</span>
+                      <p class="progressText">Advanced</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row"> <!-- JavaScript Row -->
+                <div class="col-sm-1">
+                  <p>JavaScript</p>
+                </div>
+                <div class="col-sm-11">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                      <span class="sr-only">JavaScript Skill</span>
+                      <p class="progressText">Intermediate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row"> <!-- Python Row -->
+                <div class="col-sm-1">
+                  <p>Python</p>
+                </div>
+                <div class="col-sm-11">
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                      <span class="sr-only">Python Skill</span>
+                      <p class="progressText">Beginner</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <footer class="navbar-inverse footer">
+      <div class="container ">
+        <div id="copyright">
+          <script>showCopyright();</script>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>

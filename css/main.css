@@ -1,0 +1,126 @@
+body{
+  padding-top: 70px;
+  margin-bottom: 30px;
+  background-color: rgb(237,237,237);
+}
+
+h1, h2, h3{
+  font-family: 'Lobster', cursive;
+}
+
+p, a{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+html{
+  position: relative;;
+  min-height: 100%;
+}
+
+.btn-primary{
+  display:inline-flex !important;
+}
+
+.progressText{
+  color: #fff;
+}
+
+.footer{
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  color: #9d9d9d;
+}
+
+.carousel{
+  width: 50%;
+  height: 50%;
+}
+
+.carousel p, .carousel h3{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.carousel, .carousel-control, .carouselSlides{
+  background-color: transparent;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.carouselSlides{
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-size: 100%;
+}
+
+.thumbnailIMG{
+  width: 242px;
+  height: 200px;
+  margin:auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.thumbnail, .jumbotron{
+  background-color: whitesmoke;
+}
+
+.thumbnail h3{
+  margin-top: 5px;
+}
+
+.hvr-bounce-in{
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.showcaseContainer{
+  width: 75%;
+}
+
+#copyright h3 p{
+  display: inline-block;
+}
