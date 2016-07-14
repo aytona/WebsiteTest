@@ -74,6 +74,10 @@ html{
   margin-top: 5px;
 }
 
+.caption{
+  white-space: nowrap;
+}
+
 .hvr-bounce-in{
   cursor: pointer;
   display: inline-block;
