@@ -17,6 +17,10 @@ html{
   min-height: 100%;
 }
 
+img{
+  object-fit: contain;
+}
+
 .btn-primary{
   display:inline-flex !important;
 }
