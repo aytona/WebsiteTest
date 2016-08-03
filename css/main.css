@@ -172,7 +172,6 @@ img{
     -webkit-filter: brightness(100%);
     filter: brightness(100%);
   }
-
   100% {
     -webkit-filter: brightness(105%);
     filter: brightness(105%);
@@ -180,6 +179,10 @@ img{
 }
 
 @keyframes hoverOut{
+  0% {
+    -webkit-filter: brightness(105%);
+    filter: brightness(105%);
+  }
   100% {
     -webkit-filter: brightness(100%);
     filter: brightness(100%);
