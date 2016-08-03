@@ -61,14 +61,12 @@ img{
 }
 
 .thumbnailIMG{
-  width: 242px;
+  width: 100%;
   height: 200px;
   margin:auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid #000;
-  border-radius: 10px;
 }
 
 .thumbnail, .jumbotron{
@@ -77,6 +75,20 @@ img{
 
 .thumbnail h3{
   margin-top: 5px;
+}
+
+.thumbnail{
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+  animation-name: hoverOut;
+  animation-duration: 1s;
+}
+
+.thumbnail:hover{
+  animation-name: hoverOver;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .caption{
@@ -139,4 +151,37 @@ img{
 	right:40px;
 	display:none;
   position:fixed;
+}
+
+.label{
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 4px 6px 4px 6px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+@keyframes hoverOver{
+  0% {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
+
+  100% {
+    -webkit-filter: brightness(105%);
+    filter: brightness(105%);
+  }
+}
+
+@keyframes hoverOut{
+  100% {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+  }
 }
