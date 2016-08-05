@@ -100,7 +100,7 @@ img{
   min-width: 300px;
   animation-name: hoverOut;
   animation-duration: 1s;
-  border-radius: none;
+  border-radius: 0px !important;
 }
 
 .thumbnail:hover{
