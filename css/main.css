@@ -69,9 +69,13 @@ img{
 }
 
 .thumbnailIMG{
-  width: 100%;
+  width: calc(100% + 9px);
+  width: -moz-calc(100% + 9px);
+  width: -webkit-calc(100% + 9px);
+  width: -o-calc(100% + 9px);
   height: 200px;
-  margin:auto;
+  margin-left: -4px;
+  margin-top: -4px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -89,6 +93,7 @@ img{
   min-width: 300px;
   animation-name: hoverOut;
   animation-duration: 1s;
+  border-radius: none;
 }
 
 .thumbnail:hover{
