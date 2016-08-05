@@ -37,6 +37,13 @@ img{
   color: #9d9d9d;
 }
 
+#copyright > p{
+  position: relative;
+  text-align: center;
+  top: 5px;
+  max-height: 15px;
+}
+
 .carousel{
   min-width: 300px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
