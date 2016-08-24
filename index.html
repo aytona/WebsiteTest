@@ -44,32 +44,21 @@
     </nav>
 
     <div class="container theme-showcase" role="main">
+
       <div class="jumbotron"> <!-- Intro -->
         <h1>Welcome!</h1>
         <p>My name is Christopher Aytona, and this is my portfolio site. You can view my <a href="resume.html">résumé</a>, or some of my <a href="professional.html">professional</a> and <a href="personal.html">personal</a> projects.</p>
       </div>
 
       <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Education</a>
-            </h3>
-          </div>
-          <div id="collapse1" class="panel-collapse collapse in">
-            <div class="panel-body">
-              <p>Currently in my 3rd year of Game Programming in George Brown College in Toronto, ON</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="panel panel-default"> <!-- Skills bar -->
+        <div class="panel panel-default"> <!-- Technical Skills Panel -->
           <div class="panel-heading"> <!-- Header -->
             <h3 class="panel-title">
-              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Technical Skills</a>
+              <a data-toggle="collapse" data-parent="#accordion" href="#TechSkills">Technical Skills</a>
             </h3>
           </div>
-          <div id="collapse2" class="panel-collapse collapse">
+          <div id="TechSkills" class="panel-collapse collapse in">
             <div class="panel-body"> <!-- Content -->
               <div class="row"> <!-- Content Container -->
                 <div class="col-sm-3"> <!-- Portrait -->
@@ -253,8 +242,34 @@
             </div>
           </div>
         </div>
+
+        <div class="panel panel-default"> <!-- Education Panel -->
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#education">Education</a>
+            </h3>
+          </div>
+          <div id="education" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="media">
+                <div class="media-left">
+                  <a href="http://www.georgebrown.ca/">
+                    <img class="thumbnail" src="imgs/gbc.png" alt="George Brown College Logo">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">George Brown College</h4>
+                  <p>Currently a 3rd year Game Programming student.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
     </div>
+
     <br>
     <a href="#" class="btn btn-info scrollToTop">
       <span class="glyphicon glyphicon-chevron-up"></span>
