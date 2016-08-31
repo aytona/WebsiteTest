@@ -68,7 +68,7 @@ img{
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .carousel-control.left, .carousel-control.right{
