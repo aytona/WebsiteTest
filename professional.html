@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,122 +14,133 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/main.js"></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top"> <!-- Nav bar -->
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!-- Nav bar -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Christopher Aytona</a>
+                <a class="navbar-brand" href="index.html">Christopher Aytona</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="#">Professional Projects</a></li>
+                    <li><a href="personal.html">Personal Projects</a></li>
+                    <li><a href="resume.html">Résumé</a></li>
+                    <li>
+                        <a href="mailto:christopher.aytona@gmail.com"><img src="imgs/btnicons/email.png"> Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://ca.linkedin.com/in/christopheraytona" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/aytona" data-toggle="tooltip" data-placement="bottom" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://gitlab.com/u/aytona" data-toggle="tooltip" data-placement="bottom" title="GitLab"><i class="fa fa-gitlab" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="#">Professional Projects</a></li>
-            <li><a href="personal.html">Personal Projects</a></li>
-            <li><a href="resume.html">Résumé</a></li>
-            <li><a href="mailto:christopher.aytona@gmail.com"><img src="imgs/btnicons/email.png"> Contact</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://ca.linkedin.com/in/christopheraytona" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li><a href="https://github.com/aytona" data-toggle="tooltip" data-placement="bottom" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="https://gitlab.com/u/aytona" data-toggle="tooltip" data-placement="bottom" title="GitLab"><i class="fa fa-gitlab" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
     </nav>
 
     <div class="container theme-showcase showcaseContainer" role="main">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel"> <!-- Slides -->
-        <ol class="carousel-indicators"> <!-- Indicators -->
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox"> <!-- Wrapper for slides -->
-          <div class="item active"> <!-- Endless Runner -->
-            <div class="carouselSlides proSlide1"></div>
-            <div class="carousel-caption">
-              <h3>Endless Runner</h3>
-              <p>Mobile Game for iOS and Android</p>
-            </div>
-          </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Slides -->
+            <ol class="carousel-indicators">
+                <!-- Indicators -->
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Wrapper for slides -->
+                <div class="item active">
+                    <!-- Endless Runner -->
+                    <div class="carouselSlides proSlide1"></div>
+                    <div class="carousel-caption">
+                        <h3>Endless Runner</h3>
+                        <p>Mobile Game for iOS and Android</p>
+                    </div>
+                </div>
 
-          <div class="item"> <!-- Synapse -->
-            <div class="carouselSlides proSlide2"></div>
-            <div class="carousel-caption">
-              <h3>Synapse</h3>
-              <p>Upcoming Sci-Fi RPG</p>
+                <div class="item">
+                    <!-- Synapse -->
+                    <div class="carouselSlides proSlide2"></div>
+                    <div class="carousel-caption">
+                        <h3>Synapse</h3>
+                        <p>Upcoming Sci-Fi RPG</p>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-sm-12 col-md-4"> <!-- Endless Runner -->
-          <div class="thumbnail">
-            <div class="thumbnailIMG endlessrunnerIMG">
-              <span class="label label-success">In production</span>
-            </div>
-            <div class="caption">
-              <span>
+        <br>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <!-- Endless Runner -->
+                <div class="thumbnail">
+                    <div class="thumbnailIMG endlessrunnerIMG">
+                    </div>
+                    <div class="caption">
+                        <span>
                 <button type="button" class="btn btn-info btn-xs hvr-bounce-in"><img src="imgs/btnicons/code.png"> C#</button>
                 <button type="button" class="btn btn-info btn-xs hvr-bounce-in"><img src="imgs/btnicons/engine.png"> Unity3D</button>
                 <button type="button" class="btn btn-info btn-xs hvr-bounce-in"><img src="imgs/btnicons/mobile.png"> Mobile</button>
                 <button type="button" class="btn btn-info btn-xs hvr-bounce-in" data-toggle="tooltip" data-placement="bottom" title="Role: Gameplay Programmer"><img src="imgs/btnicons/group.png"> Group</button>
               </span>
-              <h3>Endless Runner</h3>
-              <p>An endless runner game for iOS and Android.</p>
-              <p><a href="https://github.com/aytona/YogurtEndlessRunner" class="btn btn-primary hvr-float" role="button">Source</a></p>
+                        <h3>Endless Runner</h3>
+                        <p>An endless runner game for iOS and Android.</p>
+                        <p><a href="https://github.com/aytona/YogurtEndlessRunner" class="btn btn-primary hvr-float" role="button">Source</a></p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <div class="col-sm-12 col-md-4"> <!-- Synapse -->
-          <div class="thumbnail">
-            <div class="thumbnailIMG synapseIMG">
-              <span class="label label-success">In production</span>
-            </div>
-            <div class="caption">
-              <span>
+            <div class="col-sm-12 col-md-4">
+                <!-- Synapse -->
+                <div class="thumbnail">
+                    <div class="thumbnailIMG synapseIMG">
+                    </div>
+                    <div class="caption">
+                        <span>
                 <button type="button" class="btn btn-info btn-xs hvr-bounce-in"><img src="imgs/btnicons/code.png"> C#</button>
                 <button type="button" class="btn btn-info btn-xs hvr-bounce-in"><img src="imgs/btnicons/engine.png"> Unity3D</button>
                 <button type="button" class="btn btn-info btn-xs hvr-bounce-in"><img src="imgs/btnicons/keyboard.png"> PC</button>
                 <button type="button" class="btn btn-info btn-xs hvr-bounce-in" data-toggle="tooltip" data-placement="bottom" title="Role: Gameplay Programmer"><img src="imgs/btnicons/group.png"> Group</button>
               </span>
-              <h3>Synapse</h3>
-              <p>Upcoming Sci-Fi RPG.</p>
-              <p><a href="https://synapsegame.com/" class="btn btn-primary hvr-float" role="button">Website</a></p>
+                        <h3>Synapse</h3>
+                        <p>Upcoming Sci-Fi RPG.</p>
+                        <p><a href="https://synapsegame.com/" class="btn btn-primary hvr-float" role="button">Website</a></p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
     <br>
     <a href="#" class="btn btn-info scrollToTop">
-      <span class="glyphicon glyphicon-chevron-up"></span>
+        <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
     <footer class="navbar-inverse footer">
-      <div class="container">
-        <div id="copyright">
-          <script>showCopyright();</script>
+        <div class="container">
+            <div id="copyright">
+                <script>
+                    showCopyright();
+                </script>
+            </div>
         </div>
-      </div>
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
-  </body>
+</body>
