@@ -1,7 +1,7 @@
 // Updates the copyright date to the current date
 function showCopyright() {
     var currentYear = new Date().getFullYear();
-    var output = '<p><strong>Copyright © ' + currentYear + '</strong> Christopher Aytona. All Rights Reserved.</p>';
+    var output = '<p style=\"font-family: Roboto Light !important; overflow: auto; white-space: nowarp;\"><strong>Copyright © ' + currentYear + '</strong> Christopher Aytona. All Rights Reserved.</p>';
 
     document.getElementById("copyright").innerHTML = output;
 }
