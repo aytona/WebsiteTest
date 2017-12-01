@@ -44,6 +44,80 @@
         </div>
     </nav>
 
+    <!-- Body -->
+    <div class="container-fluid" style="max-width: 1400px;">
+        <!-- Left Column -->
+        <div class="col-sm-3">
+            <!-- Profile Card -->
+            <div class="thumbnail custom-thumbnail-style">
+                <!-- Profile background img -->
+                <img class="card-img-top profile-bg" src="imgs/profilebg.jpeg" alt="Background Image">
+                <!-- Profile picture -->
+                <img class="img-circle profile-pic" src="imgs/profile.jpg" alt="Profile Picture">
+                <!-- Summary -->
+                <div class="caption profile-summary">
+                    <h4>Christopher Aytona</h4>
+                    <p>Software Developer with 1 year experience as a Gameplay Programmer. Graduate of George Brown College for Game Programming with Honours.</p>
+                </div>
+            </div>
+            <!-- Occupation Card -->
+            <div class="thumbnail custom-thumbnail-style">
+                <div class="caption">
+                    <p><i class="fa fa-briefcase" aria-hidden="true"></i> Software Developer</p>
+                    <p><i class="fa fa-home" aria-hidden="true"></i> Toronto, ON, Canada</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> christopher.aytona@gmail.com</p>
+                    <p><i class="fa fa-phone-square" aria-hidden="true"></i></i> (289)-200-6079</p>
+                    <p class="pseudo-anchor" onclick="newWindow('https://github.com/aytona')"><i class="fa fa-github" aria-hidden="true"></i> @aytona</p>
+                </div>
+            </div>
+            <!-- Skill Card -->
+            <div class="thumbnail custom-thumbnail-style">
+                <div class="caption">
+                    <h4><i class="fa fa-code" aria-hidden="true"></i> Skills</h4>
+                    <!-- Legend -->
+                    <!-- TODO: Change styling on hover and on click for legends -->
+                    <div class="row">
+                        <div id="progressLegend1" class="col-sm-6 custom-legend" onclick="toggleSkill(1)">
+                            <p>Professional</p>
+                            <div class="progress" style="height: 3px;">
+                                <div class="progress-bar custom-bg-pro" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div id="progressLegend0" class="col-sm-6 custom-legend" onclick="toggleSkill(0)">
+                            <p>Educational</p>
+                            <div class="progress" style="height: 3px;">
+                                <div class="progress-bar custom-bg-edu" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Skills -->
+                    <script>
+                        generateSkillBar("C#", 3, 1);
+                    </script>
+                    <script>
+                        generateSkillBar("C++", 3, 0)
+                    </script>
+                    <script>
+                        generateSkillBar("Java", 2, 0)
+                    </script>
+                    <script>
+                        generateSkillBar("Swift", 2, 0)
+                    </script>
+                    <script>
+                        generateSkillBar("JavaScript", 3, 0)
+                    </script>
+                    <script>
+                        generateSkillBar("Git", 3, 1)
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- Right Column -->
+        <div class="col-sm-9" style="border: dotted;">
+
+        </div>
+    </div>
+
     <!-- Resume Modal -->
     <script>
         modalDownload("resume", "Résumé", "<div id=\"resumePDF\"></div>",
@@ -51,7 +125,7 @@
     </script>
 
     <!-- Back to top button -->
-    <a href="#" class="btn scrollToTop">
+    <a href="#" class="btn btm-default scrollToTop">
         <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
 

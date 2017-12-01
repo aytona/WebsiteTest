@@ -81,3 +81,91 @@ function newWindow(link) {
 function modalDownload(id, title, body, dlFile) {
     document.write('<div class=\"modal fade\" id=\"' + id + '\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ModalLabel\" aria-hidden=\"true\"><div class=\"modal-dialog modal-lg\" role=\"document\"><div class=\"modal-content\"><div class=\"modal-header\"><h3 class=\"modal-title\" id=\"ModalLabel\">' + title + '</h3></div><div class=\"modal-body\">' + body + '</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button><a type=\"button\" class=\"btn btn-primary\" href=\"' + dlFile + '\" download>Download</a></div></div></div></div>')
 }
+
+// Toggle system for skills
+var progressArray = [false, false];
+
+// Toggles a boolean using the param as index
+function toggleSkill(index) {
+    progressArray[index] = !progressArray[index];
+
+    // Turns off the previous index, and turns on the current index
+    if (progressArray.every(checkProgress)) {
+        for (i = 0; i < progressArray.length; i++) {
+            if (i == index) {
+                progressArray[i] = true;
+            } else {
+                progressArray[i] = false;
+            }
+        }
+    }
+
+    // Changes the styling of active and inactive buttons
+    for (i = 0; i < progressArray.length; i++) {
+        if (progressArray[i]) {
+            document.getElementById("progressLegend" + i).classList.add("badge");
+            document.getElementById("progressLegend" + i).classList.add("badge-secondary");
+        } else {
+            document.getElementById("progressLegend" + i).classList.remove("badge");
+            document.getElementById("progressLegend" + i).classList.remove("badge-secondary");
+        }
+    }
+
+    skillUpdate();
+}
+
+// Returns if all elements are true
+function checkProgress(bool) {
+    return bool == true;
+}
+
+// Updates the skills bar
+function skillUpdate() {
+    var eduLength = document.getElementsByClassName('skill-edu').length;
+    var proLength = document.getElementsByClassName('skill-pro').length;
+
+    // TODO: A better way to iterate through all class elements
+    if (progressArray[0]) {
+        for (i = 0; i < eduLength; i++) {
+            document.getElementsByClassName('skill-edu')[i].style.display = "block";
+        }
+        for (j = 0; j < proLength; j++) {
+            document.getElementsByClassName('skill-pro')[j].style.display = "none";
+        }
+    } else if (progressArray[1]) {
+        for (i = 0; i < eduLength; i++) {
+            document.getElementsByClassName('skill-edu')[i].style.display = "none";
+        }
+        for (j = 0; j < proLength; j++) {
+            document.getElementsByClassName('skill-pro')[j].style.display = "block";
+        }
+    } else {
+        for (i = 0; i < eduLength; i++) {
+            document.getElementsByClassName('skill-edu')[i].style.display = "block";;
+        }
+        for (j = 0; j < proLength; j++) {
+            document.getElementsByClassName('skill-pro')[j].style.display = "block";
+        }
+    }
+}
+
+// Generates a skill bar that requires name, edu year length and pro year length
+function generateSkillBar(name, edu, pro) {
+    var totalYears = parseInt(edu) + parseInt(pro);
+    var eduPercent = parseInt(edu) / totalYears * 100;
+    var proPercent = parseInt(pro) / totalYears * 100;
+    var eduYears, proYears;
+    eduYears = proYears = " Year";
+
+    if (parseInt(edu) > 1) {
+        eduYears += "s";
+    }
+
+    if (parseInt(pro) > 1) {
+        proYears += "s";
+    }
+
+    document.write('<p>' + name + '</p>');
+    document.write('<div class=\"progress\"> <div class=\"progress-bar custom-bg-pro skill-pro\" role=\"progressbar\" style=\"width: ' + proPercent + '%\" aria-valuenow=\"' + pro + '\" aria-valuemin=\"0\" aria-valuemax=\"' + totalYears + '\">' + pro + proYears + '</div>');
+    document.write('<div class=\"progress-bar custom-bg-edu skill-edu\" role=\"progressbar\" style=\"width: ' + eduPercent + '%\" aria-valuenow=\"' + edu + '\" aria-valuemin=\"0\" aria-valuemax=\"' + totalYears + '\">' + edu + eduYears + '</div></div>');
+}

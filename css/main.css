@@ -17,18 +17,22 @@ body {
     padding-top: 100px;
     margin-bottom: 30px;
     background-color: whitesmoke;
-    max-width: 1600px;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
     font-family: 'Roboto Bold';
 }
 
-p,
 a {
     font-family: 'Roboto';
+}
+
+p {
+    font-family: 'Roboto Light';
 }
 
 a {
@@ -44,9 +48,86 @@ img {
     object-fit: contain;
 }
 
-.btn-primary {
-    display: inline-flex !important;
+.thumbnailIMG {
+    width: calc(100% + 8.5px);
+    width: -moz-calc(100% + 8.5px);
+    width: -webkit-calc(100% + 8.5px);
+    width: -o-calc(100% + 8.5px);
+    height: 200px;
+    margin-left: -4px;
+    margin-top: -4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.scrollToTop {
+    bottom: 50px;
+    right: 40px;
+    display: none;
+    position: fixed;
+}
+
+.showcaseContainer {
+    width: 75%;
+}
+
+.custom-bg-edu {
+    background-color: #009688 !important;
+}
+
+.custom-bg-pro {
+    background-color: #283e4a !important;
+}
+
+.custom-thumbnail-style {
+    width: 95%;
+}
+
+.custom-legend {
+    animation-name: hoverOut;
+    animation-duration: 1s;
+}
+
+.custom-legend:hover {
+    cursor: pointer;
+    animation-name: hoverOver;
+    animation-duration: 1s;
+}
+
+.custom-legend p {
+    text-align: center;
+}
+
+.profile-bg {
+    max-width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
+    margin-bottom: -35%;
+}
+
+.profile-pic {
+    max-width: 50% !important;
+    position: relative;
+    bottom: 75px;
+    border: 2px solid whitesmoke;
+    margin-bottom: -25%;
+}
+
+.profile-summary {
+    text-align: center;
+}
+
+.pseudo-anchor {
+    cursor: pointer;
+}
+
+.pseudo-anchor:hover {
+    text-decoration-color: black;
+    text-decoration-line: underline;
+}
+
+
+/* Bootstrap overwrite */
 
 .progressText {
     color: #fff;
@@ -103,17 +184,8 @@ img {
     filter: none !important;
 }
 
-.thumbnailIMG {
-    width: calc(100% + 8.5px);
-    width: -moz-calc(100% + 8.5px);
-    width: -webkit-calc(100% + 8.5px);
-    width: -o-calc(100% + 8.5px);
-    height: 200px;
-    margin-left: -4px;
-    margin-top: -4px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.btn-primary {
+    display: inline-flex !important;
 }
 
 .thumbnail,
@@ -126,8 +198,6 @@ img {
 }
 
 .thumbnail {
-    min-width: 300px;
-    max-width: 310px;
     animation-name: hoverOut;
     animation-duration: 1s;
     border-radius: 0px !important;
@@ -137,10 +207,6 @@ img {
     animation-name: hoverOver;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-}
-
-.caption {
-    white-space: nowrap;
 }
 
 .hvr-bounce-in {
@@ -190,19 +256,8 @@ img {
     transform: translateY(-8px);
 }
 
-.showcaseContainer {
-    width: 75%;
-}
-
-.scrollToTop {
-    bottom: 50px;
-    right: 40px;
-    display: none;
-    position: fixed;
-}
-
 .label {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Light';
     text-transform: uppercase;
     border-radius: 0;
     padding: 4px 6px 4px 6px;
@@ -214,6 +269,9 @@ img {
     user-select: none;
     cursor: default;
 }
+
+
+/* Box shadow highlight animation */
 
 @keyframes hoverOver {
     0% {
@@ -260,6 +318,9 @@ img {
         box-shadow: none;
     }
 }
+
+
+/* Custom scrollbar */
 
 ::-webkit-scrollbar {
     width: 10px;
