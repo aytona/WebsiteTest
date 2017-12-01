@@ -103,11 +103,9 @@ function toggleSkill(index) {
     // Changes the styling of active and inactive buttons
     for (i = 0; i < progressArray.length; i++) {
         if (progressArray[i]) {
-            document.getElementById("progressLegend" + i).classList.add("badge");
-            document.getElementById("progressLegend" + i).classList.add("badge-secondary");
+            document.getElementById("progressLegend" + i).classList.add("custom-legend-active");
         } else {
-            document.getElementById("progressLegend" + i).classList.remove("badge");
-            document.getElementById("progressLegend" + i).classList.remove("badge-secondary");
+            document.getElementById("progressLegend" + i).classList.remove("custom-legend-active");
         }
     }
 
@@ -149,13 +147,23 @@ function skillUpdate() {
     }
 }
 
+// The highest combined number of years from 1 skill
+var maxYears = 0;
+
 // Generates a skill bar that requires name, edu year length and pro year length
 function generateSkillBar(name, edu, pro) {
-    var totalYears = parseInt(edu) + parseInt(pro);
-    var eduPercent = parseInt(edu) / totalYears * 100;
-    var proPercent = parseInt(pro) / totalYears * 100;
+    var totalYears = edu + pro;
+
+    if (totalYears > maxYears) {
+        maxYears = totalYears;
+    }
+
+    var eduPercent = edu / maxYears * 100;
+    var proPercent = pro / maxYears * 100;
     var eduYears, proYears;
     eduYears = proYears = " Year";
+
+
 
     if (parseInt(edu) > 1) {
         eduYears += "s";
@@ -166,6 +174,6 @@ function generateSkillBar(name, edu, pro) {
     }
 
     document.write('<p>' + name + '</p>');
-    document.write('<div class=\"progress\"> <div class=\"progress-bar custom-bg-pro skill-pro\" role=\"progressbar\" style=\"width: ' + proPercent + '%\" aria-valuenow=\"' + pro + '\" aria-valuemin=\"0\" aria-valuemax=\"' + totalYears + '\">' + pro + proYears + '</div>');
-    document.write('<div class=\"progress-bar custom-bg-edu skill-edu\" role=\"progressbar\" style=\"width: ' + eduPercent + '%\" aria-valuenow=\"' + edu + '\" aria-valuemin=\"0\" aria-valuemax=\"' + totalYears + '\">' + edu + eduYears + '</div></div>');
+    document.write('<div class=\"progress\"> <div class=\"progress-bar custom-bg-pro skill-pro\" role=\"progressbar\" style=\"width: ' + proPercent + '%\" aria-valuenow=\"' + pro + '\" aria-valuemin=\"0\" aria-valuemax=\"' + maxYears + '\">' + pro + proYears + '</div>');
+    document.write('<div class=\"progress-bar custom-bg-edu skill-edu\" role=\"progressbar\" style=\"width: ' + eduPercent + '%\" aria-valuenow=\"' + edu + '\" aria-valuemin=\"0\" aria-valuemax=\"' + maxYears + '\">' + edu + eduYears + '</div></div>');
 }
