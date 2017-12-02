@@ -49,6 +49,10 @@ img {
     object-fit: contain;
 }
 
+.container-body {
+    max-width: 1400px;
+}
+
 .thumbnailIMG {
     width: calc(100% + 8.5px);
     width: -moz-calc(100% + 8.5px);
@@ -91,9 +95,11 @@ img {
 
 .custom-legend:hover {
     cursor: pointer;
-    background: lightgray;
-    border-radius: 2px;
-    box-shadow: inset 0 0 10px #444, 0 0 10px #444;
+    background: #555555;
+    color: whitesmoke;
+    border: 0.5px solid #555555;
+    border-radius: 1px;
+    box-shadow: inset 0 0 5px #555555, 0 0 5px #555555;
     padding: 0 10px 0 10px;
 }
 
@@ -101,10 +107,14 @@ img {
     text-align: center;
 }
 
+.custom-progress-style {
+    height: .25em;
+}
+
 .custom-legend-active {
     background: white;
-    border-radius: 2px;
-    box-shadow: inset 0 0 2px #444, 0 0 2px #444;
+    border: 0.5px solid #555555;
+    box-shadow: inset 0 0 1px #555555, 0 0 1px #555555;
     padding: 0 10px 0 10px;
 }
 

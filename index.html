@@ -46,7 +46,7 @@
     </nav>
 
     <!-- Body -->
-    <div class="container-fluid" style="max-width: 1400px;">
+    <div class="container-fluid container-body">
         <!-- Left Column -->
         <div class="col-sm-3">
             <!-- Profile Card -->
@@ -76,18 +76,17 @@
                 <div class="caption">
                     <h4><i class="fa fa-code" aria-hidden="true"></i> Skills</h4>
                     <!-- Legend -->
-                    <!-- TODO: Change styling on hover and on click for legends -->
                     <div class="row">
                         <div class="col-sm-1"></div>
                         <div id="progressLegend1" class="col-sm-5 custom-legend" onclick="toggleSkill(1)">
                             <p>Professional</p>
-                            <div class="progress" style="height: 3px;">
+                            <div class="progress custom-progress-style">
                                 <div class="progress-bar custom-bg-pro" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div id="progressLegend0" class="col-sm-5 custom-legend" onclick="toggleSkill(0)">
                             <p>Educational</p>
-                            <div class="progress" style="height: 3px;">
+                            <div class="progress custom-progress-style">
                                 <div class="progress-bar custom-bg-edu" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>

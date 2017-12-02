@@ -122,7 +122,6 @@ function skillUpdate() {
     var eduLength = document.getElementsByClassName('skill-edu').length;
     var proLength = document.getElementsByClassName('skill-pro').length;
 
-    // TODO: A better way to iterate through all class elements
     if (progressArray[0]) {
         for (i = 0; i < eduLength; i++) {
             document.getElementsByClassName('skill-edu')[i].style.display = "block";
