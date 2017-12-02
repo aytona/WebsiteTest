@@ -23,7 +23,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
     font-family: 'Roboto Bold';
 }
 
@@ -92,7 +93,7 @@ img {
     cursor: pointer;
     background: lightgray;
     border-radius: 2px;
-    box-shadow: inset 0 0 25px lightslategray, 0 0 25px lightslategray;
+    box-shadow: inset 0 0 10px #444, 0 0 10px #444;
     padding: 0 10px 0 10px;
 }
 
@@ -101,9 +102,9 @@ img {
 }
 
 .custom-legend-active {
-    background: lightgray;
+    background: white;
     border-radius: 2px;
-    box-shadow: inset 0 0 10px lightslategray, 0 0 10px lightslategray;
+    box-shadow: inset 0 0 2px #444, 0 0 2px #444;
     padding: 0 10px 0 10px;
 }
 
@@ -125,13 +126,19 @@ img {
     text-align: center;
 }
 
-.pseudo-anchor {
+.pseudo-anchor,
+.pseudoThumbnail {
     cursor: pointer;
 }
 
 .pseudo-anchor:hover {
     text-decoration-color: black;
     text-decoration-line: underline;
+}
+
+.custom-card-subtitle {
+    color: #283e4a;
+    padding-bottom: 0.5em;
 }
 
 
@@ -197,7 +204,8 @@ img {
 }
 
 .thumbnail,
-.jumbotron {
+.jumbotron,
+.card {
     background-color: whitesmoke;
 }
 
@@ -205,13 +213,15 @@ img {
     margin-top: 5px;
 }
 
-.thumbnail {
+.thumbnail,
+.card {
     animation-name: hoverOut;
     animation-duration: 1s;
     border-radius: 0px !important;
 }
 
-.thumbnail:hover {
+.thumbnail:hover,
+.card:hover {
     animation-name: hoverOver;
     animation-duration: 1s;
     animation-fill-mode: forwards;

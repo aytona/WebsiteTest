@@ -8,6 +8,7 @@
     <title>Christopher Aytona</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/thumbnailimgs.css" rel="stylesheet">
     <link rel="icon" href="imgs/icon.png">
     <link rel="stylesheet" href="css/font-awesome.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -115,8 +116,232 @@
             </div>
         </div>
         <!-- Right Column -->
-        <div class="col-sm-9" style="border: dotted;">
+        <div class="col-sm-9">
+            <!-- Experience Card -->
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i> Work Experience</h2><br>
+                    <h3 class="card-subtitle mb-2 text-muted">Game Programmer | Transhumanoid Productions</h3><br>
+                    <h5 class="card-subtitle mb-2 text-muted custom-card-subtitle"><i class="fa fa-calendar" aria-hidden="true"></i> July 2016 - December 2016</h5><br>
+                    <p class="card-text">Responsible for programming UI functionality</p>
+                    <p class="card-text">Develop a game using Unity game engine and C#</p>
+                    <p class="card-text">Assisted in project version control using Git</p>
+                    <hr>
+                    <h3 class="card-subtitle mb-2 text-muted">Programmer Intern | Ruckus Gamges</h3><br>
+                    <h5 class="card-subtitle mb-2 text-muted custom-card-subtitle"><i class="fa fa-calendar" aria-hidden="true"></i> October 2015 - September 2016</h5><br>
+                    <p class="card-text">Responsible for gameplay scripting</p>
+                    <p class="card-text">Develop a game using Unity game engine and C#</p>
+                    <p class="card-text">Deliverable build for iOS and Android</p>
+                    <p class="card-text">Project manager using Git</p>
+                </div>
+            </div>
+            <!-- Education Card -->
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2><br>
+                    <h3 class="card-subtitle mb-2 text-muted">Game Programming | George Brown College</h3><br>
+                    <h5 class="card-subtitle mb-2 text-muted custom-card-subtitle">Ontario College Advanced Diploma | 3.6 GPA</h5>
+                    <h5 class="card-subtitle mb-2 text-muted custom-card-subtitle"><i class="fa fa-calendar" aria-hidden="true"></i> September 2014 - April 2017</h5>
+                    <p class="card-text">Graduate with Honours</p>
+                    <p class="card-text">Student Representative</p>
+                    <p class="card-text">Student Leadership Academy</p>
+                    <p class="card-text">Director of Student Representatives for the IGDA GBC</p>
+                </div>
+            </div>
 
+            <h2 class="card-title"><i class="fa fa-cogs" aria-hidden="true"></i> Projects</h2>
+            <hr>
+            <!-- Project Thumbnails -->
+            <div class="row">
+                <!-- Dark Spirits -->
+                <div class="col-md-4 skill-edu">
+                    <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/GlobalGameJam2016')">
+                        <div class="thumbnailIMG spiritsIMG"></div>
+                        <div class="caption">
+                            <span>
+                          <script>codeButton("C#")</script>
+                          <script>engineButton("Unity3D")</script>
+                          <script>buildButton("Console")</script>
+                          <script>groupButton("Gameplay Programmer")</script>
+                        </span>
+                            <h3>Dark Spirits</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Close Encounters -->
+                <div class="col-md-4 skill-edu">
+                    <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/luizbranco/close_encounters')">
+                        <div class="thumbnailIMG encountersIMG"></div>
+                        <div class="caption">
+                            <span>
+                              <script>codeButton("C#")</script>
+                              <script>engineButton("Unity3D")</script>
+                              <script>buildButton("PC")</script>
+                              <script>groupButton("Gameplay Programmer")</script>
+                            </span>
+                            <h3>Close Encounters</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- DK Prototype -->
+                <div class="col-md-4 skill-edu">
+                    <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/DonkeyKong')">
+                        <div class="thumbnailIMG donkeyIMG"></div>
+                        <div class="caption">
+                            <span>
+                            <script>codeButton("C#")</script>
+                            <script>engineButton("Unity3D")</script>
+                            <script>buildButton("PC")</script>
+                            <script>schoolButton("DESN1086: Asset Development II")</script>
+                          </span>
+                            <h3>Donkey Klone</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Match Making -->
+                <div class="col-md-4 skill-edu">
+                    <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/MemoryGame')">
+                        <div class="thumbnailIMG matchingIMG"></div>
+                        <div class="caption">
+                            <span>
+                              <script>codeButton("HTML")</script>
+                              <script>buildButton("Web")</script>
+                              <script>schoolButton("DESN1083: Asset Development I")</script>
+                              <script>openSourceButton("https://github.com/aytona/Memory_Game")</script>
+                            </span>
+                            <h3>Matching Game</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Alien Invasion -->
+                <div class="col-md-4 skill-edu">
+                    <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/SFMLAssignment2')">
+                        <div class="thumbnailIMG alienIMG"></div>
+                        <div class="caption">
+                            <span>
+                            <script>codeButton("C++")</script>
+                            <script>engineButton("SFML")</script>
+                            <script>buildButton("Console")</script>
+                            <script>schoolButton("GAME2002: Multimedia Systems Development")</script>
+                          </span>
+                            <h3>Alien Invasion</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- OpenGL Rendering -->
+                <div class="col-md-4 skill-edu">
+                    <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/OpenGLRendering')">
+                        <div class="thumbnailIMG openglIMG"></div>
+                        <div class="caption">
+                            <span>
+                              <script>codeButton("C++")</script>
+                              <script>engineButton("OpenGL")</script>
+                              <script>buildButton("PC")</script>
+                              <script>schoolButton("GAME2012: 3D Graphics Programming")</script>
+                            </span>
+                            <h3>OpenGL Rendering</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- 2D Platformer -->
+                <div class="col-md-4 skill-edu">
+                    <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/2DPlatformerPrototype')">
+                        <div class="thumbnailIMG platformerIMG"></div>
+                        <div class="caption">
+                            <span>
+                            <script>codeButton("C#")</script>
+                            <script>engineButton("Unity3D")</script>
+                            <script>buildButton("PC")</script>
+                            <script>schoolButton("GAME1012: Game Engine Scripting")</script>
+                          </span>
+                            <h3>2D Platformer</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Monkey Ball -->
+                <div class="col-md-4 skill-edu">
+                    <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/mobiGameAssignment2')">
+                        <div class="thumbnailIMG mobiIMG"></div>
+                        <div class="caption">
+                            <span>
+                              <script>codeButton("C#")</script>
+                              <script>engineButton("Unity3D")</script>
+                              <script>buildButton("Mobile")</script>
+                              <script>schoolButton("GAME2011: Mobile Game Fundamentals")</script>
+                            </span>
+                            <h3>Monkey Ball</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Monster Thrower -->
+                <div class="col-md-4 skill-edu">
+                    <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/GAME3001GameProject')">
+                        <div class="thumbnailIMG monsterIMG"></div>
+                        <div class="caption">
+                            <span>
+                              <script>codeButton("C#")</script>
+                              <script>engineButton("Unity3D")</script>
+                              <script>buildButton("PC")</script>
+                              <script>schoolButton("GAME3001: Artificial Intelligence")</script>
+                            </span>
+                            <h3>AI Defence</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Recognizing Blobs -->
+                <div class="col-md-4 skill-edu">
+                    <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/RecognizingBlobs')">
+                        <div class="thumbnailIMG blobsIMG"></div>
+                        <div class="caption">
+                            <span>
+                      <script>codeButton("C++")</script>
+                      <script>buildButton("PC")</script>
+                      <script>schoolButton("GAME2001: Data Structures & Algorithms")</script>
+                      <script>openSourceButton("https://github.com/aytona/RecognizingBlobs")</script>
+                    </span>
+                            <h3>Recognizing Blobs</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--Synapse -->
+                <div class="col-md-4 skill-pro">
+                    <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://synstasis.com/index.html')">
+                        <div class="thumbnailIMG synapseIMG"></div>
+                        <div class="caption">
+                            <span>
+                      <script>codeButton("C#")</script>
+                      <script>engineButton("Unity3D")</script>
+                      <script>buildButton("PC")</script>
+                      <script>groupButton("Gameplay Programmer")</script>
+                    </span>
+                            <h3>Synapse</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Endless Yogurt -->
+                <div class="col-md-4 skill-pro">
+                    <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/YogurtEndlessRunner')">
+                        <div class="thumbnailIMG endlessrunnerIMG">
+                        </div>
+                        <div class="caption">
+                            <span>
+                                <script>codeButton("C#")</script>
+                                <script>engineButton("Unity3d")</script>
+                                <script>buildButton("Mobile")</script>
+                                <script>groupButton("Gameplay Programmer")</script>
+                            </span>
+                            <h3>Endless Yogurt</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Thumbnails -->
         </div>
     </div>
 
