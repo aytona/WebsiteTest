@@ -127,7 +127,7 @@ img {
 .profile-pic {
     max-width: 50% !important;
     position: relative;
-    bottom: 75px;
+    bottom: 5em;
     border: 2px solid whitesmoke;
     margin-bottom: -25%;
 }
