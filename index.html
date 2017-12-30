@@ -93,6 +93,7 @@
                         <div class="col-sm-1"></div>
                     </div>
                     <!-- Skills -->
+                    <div id="skillBars"></div>
                     <script>
                         generateSkillBar("C#", 3, 1);
                     </script>
@@ -157,12 +158,12 @@
                 <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/GlobalGameJam2016')">
                     <div class="thumbnailIMG spiritsIMG"></div>
                     <div class="caption">
-                        <span>
-                                <script>codeButton("C#")</script>
-                                <script>engineButton("Unity3D")</script>
-                                <script>buildButton("Console")</script>
-                                <script>groupButton("Gameplay Programmer")</script>
-                            </span>
+                        <span id="darkSpiritsSpan">
+                                <script>codeButton("C#", "darkSpiritsSpan")</script>
+                                <script>engineButton("Unity3D", "darkSpiritsSpan")</script>
+                                <script>buildButton("Console", "darkSpiritsSpan")</script>
+                                <script>groupButton("Gameplay Programmer", "darkSpiritsSpan")</script>
+                        </span>
                         <h3>Dark Spirits</h3>
                     </div>
                 </div>
@@ -172,11 +173,11 @@
                 <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/luizbranco/close_encounters')">
                     <div class="thumbnailIMG encountersIMG"></div>
                     <div class="caption">
-                        <span>
-                              <script>codeButton("C#")</script>
-                              <script>engineButton("Unity3D")</script>
-                              <script>buildButton("PC")</script>
-                              <script>groupButton("Gameplay Programmer")</script>
+                        <span id="closeEncountersSpan">
+                              <script>codeButton("C#", "closeEncountersSpan")</script>
+                              <script>engineButton("Unity3D", "closeEncountersSpan")</script>
+                              <script>buildButton("PC", "closeEncountersSpan")</script>
+                              <script>groupButton("Gameplay Programmer", "closeEncountersSpan")</script>
                             </span>
                         <h3>Close Encounters</h3>
                     </div>
@@ -187,11 +188,11 @@
                 <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/DonkeyKong')">
                     <div class="thumbnailIMG donkeyIMG"></div>
                     <div class="caption">
-                        <span>
-                                <script>codeButton("C#")</script>
-                                <script>engineButton("Unity3D")</script>
-                                <script>buildButton("PC")</script>
-                                <script>schoolButton("DESN1086: Asset Development II")</script>
+                        <span id="DKSpan">
+                                <script>codeButton("C#","DKSpan")</script>
+                                <script>engineButton("Unity3D", "DKSpan")</script>
+                                <script>buildButton("PC", "DKSpan")</script>
+                                <script>schoolButton("DESN1086: Asset Development II", "DKSpan")</script>
                           </span>
                         <h3>Donkey Klone</h3>
                     </div>
@@ -202,11 +203,11 @@
                 <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/MemoryGame')">
                     <div class="thumbnailIMG matchingIMG"></div>
                     <div class="caption">
-                        <span>
-                              <script>codeButton("HTML")</script>
-                              <script>buildButton("Web")</script>
-                              <script>schoolButton("DESN1083: Asset Development I")</script>
-                              <script>openSourceButton("https://github.com/aytona/Memory_Game")</script>
+                        <span id="matchMakingSpan">
+                              <script>codeButton("HTML", "matchMakingSpan")</script>
+                              <script>buildButton("Web", "matchMakingSpan")</script>
+                              <script>schoolButton("DESN1083: Asset Development I", "matchMakingSpan")</script>
+                              <script>openSourceButton("https://github.com/aytona/Memory_Game", "matchMakingSpan")</script>
                             </span>
                         <h3>Matching Game</h3>
                     </div>
@@ -217,11 +218,11 @@
                 <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/SFMLAssignment2')">
                     <div class="thumbnailIMG alienIMG"></div>
                     <div class="caption">
-                        <span>
-                                <script>codeButton("C++")</script>
-                                <script>engineButton("SFML")</script>
-                                <script>buildButton("Console")</script>
-                                <script>schoolButton("GAME2002: Multimedia Systems Development")</script>
+                        <span id="alienInvasionSpan">
+                                <script>codeButton("C++", "alienInvasionSpan")</script>
+                                <script>engineButton("SFML", "alienInvasionSpan")</script>
+                                <script>buildButton("Console", "alienInvasionSpan")</script>
+                                <script>schoolButton("GAME2002: Multimedia Systems Development", "alienInvasionSpan")</script>
                           </span>
                         <h3>Alien Invasion</h3>
                     </div>
@@ -232,11 +233,11 @@
                 <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/OpenGLRendering')">
                     <div class="thumbnailIMG openglIMG"></div>
                     <div class="caption">
-                        <span>
-                              <script>codeButton("C++")</script>
-                              <script>engineButton("OpenGL")</script>
-                              <script>buildButton("PC")</script>
-                              <script>schoolButton("GAME2012: 3D Graphics Programming")</script>
+                        <span id="openGLRenderingSpan">
+                              <script>codeButton("C++", "openGLRenderingSpan")</script>
+                              <script>engineButton("OpenGL", "openGLRenderingSpan")</script>
+                              <script>buildButton("PC", "openGLRenderingSpan")</script>
+                              <script>schoolButton("GAME2012: 3D Graphics Programming", "openGLRenderingSpan")</script>
                             </span>
                         <h3>OpenGL Rendering</h3>
                     </div>
@@ -247,11 +248,11 @@
                 <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/2DPlatformerPrototype')">
                     <div class="thumbnailIMG platformerIMG"></div>
                     <div class="caption">
-                        <span>
-                            <script>codeButton("C#")</script>
-                            <script>engineButton("Unity3D")</script>
-                            <script>buildButton("PC")</script>
-                            <script>schoolButton("GAME1012: Game Engine Scripting")</script>
+                        <span id="platformerSpan">
+                            <script>codeButton("C#", "platformerSpan")</script>
+                            <script>engineButton("Unity3D", "platformerSpan")</script>
+                            <script>buildButton("PC", "platformerSpan")</script>
+                            <script>schoolButton("GAME1012: Game Engine Scripting", "platformerSpan")</script>
                           </span>
                         <h3>2D Platformer</h3>
                     </div>
@@ -262,12 +263,12 @@
                 <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/mobiGameAssignment2')">
                     <div class="thumbnailIMG mobiIMG"></div>
                     <div class="caption">
-                        <span>
-                              <script>codeButton("C#")</script>
-                              <script>engineButton("Unity3D")</script>
-                              <script>buildButton("Mobile")</script>
-                              <script>schoolButton("GAME2011: Mobile Game Fundamentals")</script>
-                            </span>
+                        <span id="monkeyBallSpan">
+                              <script>codeButton("C#", "monkeyBallSpan")</script>
+                              <script>engineButton("Unity3D", "monkeyBallSpan")</script>
+                              <script>buildButton("Mobile", "monkeyBallSpan")</script>
+                              <script>schoolButton("GAME2011: Mobile Game Fundamentals", "monkeyBallSpan")</script>
+                        </span>
                         <h3>Monkey Ball</h3>
                     </div>
                 </div>
@@ -277,11 +278,11 @@
                 <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/GAME3001GameProject')">
                     <div class="thumbnailIMG monsterIMG"></div>
                     <div class="caption">
-                        <span>
-                              <script>codeButton("C#")</script>
-                              <script>engineButton("Unity3D")</script>
-                              <script>buildButton("PC")</script>
-                              <script>schoolButton("GAME3001: Artificial Intelligence")</script>
+                        <span id="monsterThrowerSpan">
+                              <script>codeButton("C#", "monsterThrowerSpan")</script>
+                              <script>engineButton("Unity3D", "monsterThrowerSpan")</script>
+                              <script>buildButton("PC", "monsterThrowerSpan")</script>
+                              <script>schoolButton("GAME3001: Artificial Intelligence", "monsterThrowerSpan")</script>
                             </span>
                         <h3>AI Defence</h3>
                     </div>
@@ -292,12 +293,12 @@
                 <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://github.com/aytona/RecognizingBlobs')">
                     <div class="thumbnailIMG blobsIMG"></div>
                     <div class="caption">
-                        <span>
-                      <script>codeButton("C++")</script>
-                      <script>buildButton("PC")</script>
-                      <script>schoolButton("GAME2001: Data Structures & Algorithms")</script>
-                      <script>openSourceButton("https://github.com/aytona/RecognizingBlobs")</script>
-                    </span>
+                        <span id="recognizingBlobsSpan">
+                            <script>codeButton("C++", "recognizingBlobsSpan")</script>
+                            <script>buildButton("PC", "recognizingBlobsSpan")</script>
+                            <script>schoolButton("GAME2001: Data Structures & Algorithms", "recognizingBlobsSpan")</script>
+                            <script>openSourceButton("https://github.com/aytona/RecognizingBlobs", "recognizingBlobsSpan")</script>
+                        </span>
                         <h3>Recognizing Blobs</h3>
                     </div>
                 </div>
@@ -307,12 +308,12 @@
                 <div class="thumbnail pseudoThumbnail" onclick="newWindow('https://synstasis.com/index.html')">
                     <div class="thumbnailIMG synapseIMG"></div>
                     <div class="caption">
-                        <span>
-                      <script>codeButton("C#")</script>
-                      <script>engineButton("Unity3D")</script>
-                      <script>buildButton("PC")</script>
-                      <script>groupButton("Gameplay Programmer")</script>
-                    </span>
+                        <span id="synapeSpan">
+                            <script>codeButton("C#", "synapeSpan")</script>
+                            <script>engineButton("Unity3D", "synapeSpan")</script>
+                            <script>buildButton("PC", "synapeSpan")</script>
+                            <script>groupButton("Gameplay Programmer", "synapeSpan")</script>
+                        </span>
                         <h3>Synapse</h3>
                     </div>
                 </div>
@@ -323,11 +324,11 @@
                     <div class="thumbnailIMG endlessrunnerIMG">
                     </div>
                     <div class="caption">
-                        <span>
-                                <script>codeButton("C#")</script>
-                                <script>engineButton("Unity3d")</script>
-                                <script>buildButton("Mobile")</script>
-                                <script>groupButton("Gameplay Programmer")</script>
+                        <span id="endlessYogurtSpan">
+                            <script>codeButton("C#", "endlessYogurtSpan")</script>
+                            <script>engineButton("Unity3d", "endlessYogurtSpan")</script>
+                            <script>buildButton("Mobile", "endlessYogurtSpan")</script>
+                            <script>groupButton("Gameplay Programmer", "endlessYogurtSpan")</script>
                             </span>
                         <h3>Endless Yogurt</h3>
                     </div>

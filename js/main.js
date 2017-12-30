@@ -25,51 +25,136 @@ $(document).ready(function() {
 });
 
 // Shortcut to generate the code button with param of the language name
-function codeButton(name) {
-    document.write('<button type=\"button\" class=\"btn btn-info btn-xs hvr-bounce-in\"><img src=\"imgs/btnicons/code.png\">' + ' ' + name + '</button>');
+function codeButton(name, id) {
+    var parentNode = document.getElementById(id);
+
+    var buttonNode = document.createElement("button");
+    buttonNode.type = "button";
+    buttonNode.className = "btn btn-info btn-xs hvr-bounce-in";
+    parentNode.appendChild(buttonNode);
+
+    var imgNode = document.createElement("img");
+    imgNode.src = "imgs/btnicons/code.png";
+    buttonNode.appendChild(imgNode);
+
+    var nameNode = document.createTextNode(" " + name);
+    buttonNode.appendChild(nameNode);
 }
 
 // Shortcut to generate the engine button with param of the engine name
-function engineButton(name) {
-    document.write('<button type=\"button\" class=\"btn btn-info btn-xs hvr-bounce-in\"><img src=\"imgs/btnicons/engine.png\">' + ' ' + name + '</button>');
+function engineButton(name, id) {
+    var parentNode = document.getElementById(id);
+
+    var buttonNode = document.createElement("button");
+    buttonNode.type = "button";
+    buttonNode.className = "btn btn-info btn-xs hvr-bounce-in";
+    parentNode.appendChild(buttonNode);
+
+    var imgNode = document.createElement("img");
+    imgNode.src = "imgs/btnicons/engine.png";
+    buttonNode.appendChild(imgNode);
+
+    var nameNode = document.createTextNode(" " + name);
+    buttonNode.appendChild(nameNode);
 }
 
 // Shortcut to generate the build button with different icons depending on the build
-function buildButton(name) {
+function buildButton(name, id) {
+    var parentNode = document.getElementById(id);
+
+    var buttonNode = document.createElement("button");
+    buttonNode.type = "button";
+    buttonNode.className = "btn btn-info btn-xs hvr-bounce-in";
+    parentNode.appendChild(buttonNode);
+
+    var imgNode = document.createElement("img");
     name = name.replace(/\s+/g, '');
-    var output = '<button type=\"button\" class=\"btn btn-info btn-xs hvr-bounce-in\">';
-    var mobile = '<img src=\"imgs/btnicons/mobile.png\">';
-    var console = '<img src=\"imgs/btnicons/console.png\">';
-    var pc = '<img src=\"imgs/btnicons/keyboard.png\">';
     switch (name) {
         case 'Mobile':
-            output += mobile;
+            imgNode.src = "imgs/btnicons/mobile.png";
             break;
         case 'Console':
-            output += console;
+            imgNode.src = "imgs/btnicons/console.png";
             break;
         case 'PC':
         default:
-            output += pc;
+            imgNode.src = "imgs/btnicons/keyboard.png";
             break;
     }
-    output += ' ' + name + '</button>';
-    document.write(output);
+    buttonNode.appendChild(imgNode);
+
+    var nameNode = document.createTextNode(" " + name);
+    buttonNode.appendChild(nameNode);
 }
 
 // Shortcut to generate the group button with the role in the group
-function groupButton(role) {
-    document.write('<button type="button" class="btn btn-info btn-xs hvr-bounce-in" data-toggle="tooltip" data-placement="bottom" title="Role: ' + role + '"><img src="imgs/btnicons/group.png"> Group</button>');
+function groupButton(role, id) {
+    var parentNode = document.getElementById(id);
+
+    var buttonNode = document.createElement("button");
+    buttonNode.type = "button";
+    buttonNode.className = "btn btn-info btn-xs hvr-bounce-in";
+    buttonNode.title = "Role: " + role;
+    parentNode.appendChild(buttonNode);
+
+    var dataToggle = document.createAttribute("data-toggle");
+    dataToggle.value = "tooltip";
+    buttonNode.setAttributeNode(dataToggle);
+
+    var dataPlacement = document.createAttribute("data-placement");
+    dataPlacement.value = "bottom";
+    buttonNode.setAttributeNode(dataPlacement);
+
+    var imgNode = document.createElement("img");
+    imgNode.src = "imgs/btnicons/group.png";
+    buttonNode.appendChild(imgNode);
+
+    var textNode = document.createTextNode(" Group");
+    buttonNode.appendChild(textNode);
 }
 
 // Shortcut to generate the open source button with the link to the source
-function openSourceButton(link) {
-    document.write('<button onclick="newWindow(\'' + link + '\')" type="button" class="btn btn-info btn-xs hvr-bounce-in"><img src="imgs/btnicons/public.png"> Source</button>');
+function openSourceButton(link, id) {
+    var parentNode = document.getElementById(id);
+
+    var buttonNode = document.createElement("button");
+    buttonNode.type = "button";
+    buttonNode.onclick = "newWindow(\"" + link + "\"";
+    buttonNode.className = "btn btn-info btn-xs hvr-bounce-in";
+    parentNode.appendChild(buttonNode);
+
+    var imgNode = document.createElement("img");
+    imgNode.src = "imgs/btnicons/public.png";
+    buttonNode.appendChild(imgNode);
+
+    var textNode = document.createTextNode(" Source");
+    buttonNode.appendChild(textNode);
 }
 
 // Shortcut to generate the school button with the name of the course
-function schoolButton(course) {
-    document.write('<button type="button" class="btn btn-info btn-xs hvr-bounce-in" data-toggle="tooltip" data-placement="bottom" title="' + course + '"><img src="imgs/btnicons/school.png"> School</button>');
+function schoolButton(course, id) {
+    var parentNode = document.getElementById(id);
+
+    var buttonNode = document.createElement("button");
+    buttonNode.type = "button";
+    buttonNode.className = "btn btn-info btn-xs hvr-bounce-in";
+    buttonNode.title = course;
+    parentNode.appendChild(buttonNode);
+
+    var dataToggle = document.createAttribute("data-toggle");
+    dataToggle.value = "tooltip";
+    buttonNode.setAttributeNode(dataToggle);
+
+    var dataPlacement = document.createAttribute("data-placement");
+    dataPlacement.value = "bottom";
+    buttonNode.setAttributeNode(dataPlacement);
+
+    var imgNode = document.createElement("img");
+    imgNode.src = "imgs/btnicons/school.png";
+    buttonNode.appendChild(imgNode);
+
+    var textNode = document.createTextNode(" School");
+    buttonNode.appendChild(textNode);
 }
 
 // Opens a new tab using the url param
@@ -79,7 +164,7 @@ function newWindow(link) {
 
 // Basic modal shortcut that includes a download
 function modalDownload(id, title, body, dlFile) {
-    document.write('<div class=\"modal fade\" id=\"' + id + '\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ModalLabel\" aria-hidden=\"true\"><div class=\"modal-dialog modal-lg\" role=\"document\"><div class=\"modal-content\"><div class=\"modal-header\"><h3 class=\"modal-title\" id=\"ModalLabel\">' + title + '</h3></div><div class=\"modal-body\">' + body + '</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button><a type=\"button\" class=\"btn btn-primary\" href=\"' + dlFile + '\" download>Download</a></div></div></div></div>')
+    document.body.innerHTML += '<div class=\"modal fade\" id=\"' + id + '\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ModalLabel\" aria-hidden=\"true\"><div class=\"modal-dialog modal-lg\" role=\"document\"><div class=\"modal-content\"><div class=\"modal-header\"><h3 class=\"modal-title\" id=\"ModalLabel\">' + title + '</h3></div><div class=\"modal-body\">' + body + '</div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button><a type=\"button\" class=\"btn btn-primary\" href=\"' + dlFile + '\" download>Download</a></div></div></div></div>';
 }
 
 // Toggle system for skills [Education, Professional]
@@ -171,9 +256,63 @@ function generateSkillBar(name, edu, pro) {
         proYears += "s";
     }
 
-    document.write('<p>' + name + '</p>');
-    document.write('<div class=\"progress\"> <div class=\"progress-bar custom-bg-pro skill-pro\" role=\"progressbar\" style=\"width: ' + proPercent + '%\" aria-valuenow=\"' + pro + '\" aria-valuemin=\"0\" aria-valuemax=\"' + maxYears + '\">' + pro + proYears + '</div>');
-    document.write('<div class=\"progress-bar custom-bg-edu skill-edu\" role=\"progressbar\" style=\"width: ' + eduPercent + '%\" aria-valuenow=\"' + edu + '\" aria-valuemin=\"0\" aria-valuemax=\"' + maxYears + '\">' + edu + eduYears + '</div></div>');
+    var parentNode = document.getElementById("skillBars");
+
+    var nameNode = document.createElement("p");
+    nameNode.value = name;
+    parentNode.appendChild(nameNode);
+
+    var progressNode = document.createElement("div");
+    progressNode.className = "progress";
+    parentNode.appendChild(progressNode);
+
+    var proNode = document.createElement("div");
+    proNode.className = "progress-bar custom-bg-pro skill-pro";
+    proNode.style.width = proPercent + "%";
+    progressNode.appendChild(proNode);
+
+    var proValueNow = document.createAttribute("aria-valuenow");
+    proValueNow.value = pro;
+    proNode.setAttributeNode(proValueNow);
+
+    var proRole = document.createAttribute("role");
+    proRole.value = "progressbar";
+    proNode.setAttributeNode(proRole);
+
+    var proValueMin = document.createAttribute("aria-valuemin");
+    proValueMin.value = "0";
+    proNode.setAttributeNode(proValueMin);
+
+    var proValueMax = document.createAttribute("aria-valuemax");
+    proValueMax.value = maxYears;
+    proNode.setAttributeNode(proValueMax);
+
+    var proTextNode = document.createTextNode(pro + proYears);
+    proNode.appendChild(proTextNode);
+
+    var eduNode = document.createElement("div");
+    eduNode.className = "progress-bar custom-bg-edu skill-edu";
+    eduNode.style.width = eduPercent + "%";
+    progressNode.appendChild(eduNode);
+
+    var eduValueNow = document.createAttribute("aria-valuenow");
+    eduValueNow.value = edu;
+    eduNode.setAttributeNode(eduValueNow);
+
+    var eduRole = document.createAttribute("role");
+    eduRole.value = "progressbar";
+    eduNode.setAttributeNode(eduRole);
+
+    var eduValueMin = document.createAttribute("aria-valuemin");
+    eduValueMin.value = "0";
+    eduNode.setAttributeNode(eduValueMin);
+
+    var eduValueMax = document.createAttribute("aria-valuemax");
+    eduValueMax.value = maxYears;
+    eduNode.setAttributeNode(eduValueMax);
+
+    var eduTextNode = document.createTextNode(edu + eduYears);
+    eduNode.appendChild(eduTextNode);
 }
 
 // Lists of all educational and professional projects
