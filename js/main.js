@@ -259,8 +259,9 @@ function generateSkillBar(name, edu, pro) {
     var parentNode = document.getElementById("skillBars");
 
     var nameNode = document.createElement("p");
-    nameNode.value = name;
     parentNode.appendChild(nameNode);
+    var nameNodeText = document.createTextNode(name);
+    nameNode.appendChild(nameNodeText);
 
     var progressNode = document.createElement("div");
     progressNode.className = "progress";
